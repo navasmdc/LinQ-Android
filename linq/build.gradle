@@ -1,0 +1,127 @@
+apply plugin: 'java'
+//apply plugin: 'com.github.dcendents.android-maven'
+// TODO WORK
+//apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'maven'
+//apply plugin: 'maven-publish'
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+// COMMENT TO DEVELOPER MODE / UNCOMMENT TO UPLOAD TO BINTARRAY
+// TODO WORK
+//ext.siteUrl = 'https://github.com/navasmdc/LinQ-Android'
+//ext.issueUrl = 'https://github.com/navasmdc/LinQ-Android/issues'
+//ext.gitUrl = 'https://github.com/navasmdc/LinQ-Android.git'
+//
+//publishing {
+//    publications {
+//        MyPublication(MavenPublication) {
+//            from components.java
+//            groupId 'com.github.navasmdc'
+//            artifactId 'LinQ-Android'
+//            version '1.0'
+//        }
+//    }
+//}
+//
+//bintray {
+//    user = "navasmdc"
+//    key = "c27d6095b4b3880b5eacf18a5eed3a4ed582e5f3"
+//    publications = ['MyPublication']
+//    pkg {
+//        repo = 'maven'
+//        name = 'LinQ-Android'
+//        userOrg = user
+//        licenses = ['Apache-2.0']
+//        vcsUrl = 'https://github.com/navasmdc/LinQ-Android.git'
+////        labels = []
+//        publicDownloadNumbers = true
+////        attributes= ['a': ['ay1', 'ay2'], 'b': ['bee'], c: 'cee'] //Optional package-level attributes
+////        attributes= [] //Optional package-level attributes
+//        version {
+//            name = '1.0'
+//            desc = ''
+//            vcsTag = '1.0'
+//            attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
+//        }
+//    }
+//}
+
+//bintray {
+//    user = hasProperty('BINTRAY_USER') ? BINTRAY_USER : "navasmdc"
+//    key = hasProperty('BINTRAY_KEY') ? BINTRAY_PASSWORD : "c27d6095b4b3880b5eacf18a5eed3a4ed582e5f3"
+//
+//    configurations = ["archives"]
+//    pkg {
+//        repo = 'maven'
+//        name = 'LinQ-Android'
+//        desc = 'Execute SQL sentences over an Object List!'
+//        websiteUrl = siteUrl
+//        issueTrackerUrl = issueUrl
+//        vcsUrl = gitUrl
+//        licenses = ['Apache-2.0']
+//        labels = []
+//        publicDownloadNumbers = true
+//    }
+//}
+//
+//install {
+//    repositories.mavenInstaller {
+//        pom {
+//            project {
+//                packaging 'jar'
+//                name 'LinQ-Android'
+//                url siteUrl
+//                licenses {
+//                    license {
+//                        name 'The Apache Software License, Version 2.0'
+//                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                    }
+//                }
+//                developers {
+//                    developer {
+//                        id 'navasmdc'
+//                        name 'Iván Navas'
+//                        email 'i.navas.mdc@gmail.com'
+//                    }
+//                }
+//                scm {
+//                    connection gitUrl
+//                    developerConnection gitUrl
+//                    url siteUrl
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//task sourcesJar(type: Jar) {
+//    from android.sourceSets.main.java.srcDirs
+//    classifier = 'sources'
+//}
+//
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+//
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//    classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
+//
+//artifacts {
+//    archives javadocJar
+//    archives sourcesJar
+//}
+//
+//task findConventions << {
+//    println project.getConvention()
+//}
