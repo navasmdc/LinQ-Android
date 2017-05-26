@@ -2,12 +2,12 @@
 
 Are you tired of search items in your list making a lot of for sentences? Or you want to delete some items or update an exactly value from an item?
 
-####LinQ is your solution!
+#### LinQ is your solution!
 
 With this library you will can execute SQL sentences over an Object List.
 
 
-##Add library
+## Add library
 ```xml
 repositories {
     jcenter()
@@ -24,17 +24,17 @@ Or add <a href="https://raw.githubusercontent.com/navasmdc/LinQ-Android/master/r
 JAR
 </a> to your project
 
-##How to use
+## How to use
 For init a new sentence you have to make a new intance from `new LinQ()` andd cal to `FROM(list)`
 
 > You can test the all examples in
-> <a href="https://github.com/navasmdc/LinQ-Android/tree/master/release/">
+> <a href="https://github.com/navasmdc/LinQ-Android/tree/master/demolinq/src/test/java/com/gc/demolinq">
 Tests folder
 </a>
 
-###Android interactive demo soon!
+### Android interactive demo soon!
 
-#####Example list
+##### Example list
 ```java
 
 {id=0, name='Name0', locale={language='ES', country='es'}}
@@ -51,11 +51,11 @@ Tests folder
 
 ```
 
-###Select
+### Select
 
 This sentence ables to select one or some items from the list or only specific fields.
 
-#####Select field
+##### Select field
 
 ```java
 List<Object> result = new LinQ<User>()
@@ -79,12 +79,12 @@ Name10
 
 
 ```
-####WHERE
+#### WHERE
 
 WHERE ables to condition your search.
 >Comparators = != < <= > >= CONTAINS (only Strings)
 
-#####Simple
+##### Simple
 ```java
 
 List<User> result =new LinQ<User>()
@@ -103,7 +103,7 @@ List<User> result =new LinQ<User>()
 
 
 ```
-#####Field Select
+##### Field Select
 ```java
 
 List<Object> result = new LinQ<User>()
@@ -118,7 +118,7 @@ Name5
 
 
 ```
-#####Multy Field Select
+##### Multy Field Select
 ```java
 
 List<HashMap<String, Object>> result = new LinQ<User>()
@@ -133,7 +133,7 @@ List<HashMap<String, Object>> result = new LinQ<User>()
 
 
 ```
-#####AND Select
+##### AND Select
 ```java
 
 List<User> result = new LinQ<User>()
@@ -149,7 +149,7 @@ List<User> result = new LinQ<User>()
 
 
 ```
-#####OR Select
+##### OR Select
 ```java
 
 List<User> result = new LinQ<User>()
@@ -164,7 +164,7 @@ Name5
 
 
 ```
-#####Contains Select
+##### Contains Select
 ```java
 
 List<User> result = new LinQ<User>()
@@ -180,7 +180,7 @@ List<User> result = new LinQ<User>()
 
 
 ```
-#####Params Select
+##### Params Select
 ```java
 
 List<User> result = new LinQ<User>()
@@ -201,7 +201,7 @@ List<User> result = new LinQ<User>()
 
 
 ```
-#####Internal Object Select
+##### Internal Object Select
 ```java
 
 List<User> result = new LinQ<User>()
@@ -220,13 +220,13 @@ List<User> result = new LinQ<User>()
 
 
 ```
-###Delete
+### Delete
 
 This sentence ables to remove one or some items from the list throught a WHERE condition.
 
 > Exec return a list with the afected items
 
-#####Delete
+##### Delete example
 ```java
 
 List<User> result = new LinQ<User>()
@@ -241,13 +241,13 @@ List<User> result = new LinQ<User>()
 
 
 ```
-###Update
+### Update
 
 This sentence ables to update the value of one or some items from the list throught a WHERE condition.
 
 > Exec return a list with the afected items
 
-#####Update
+##### Update example
 ```java
 
 List<User> result = new LinQ<User>()
