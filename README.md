@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compile ‘com.github.navasmdc:LinQ-Android:1.0@jar’
+    compile ‘com.github.navasmdc:LinQ-Android:1.1@jar’
 }
 
 ```
